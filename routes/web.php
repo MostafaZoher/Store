@@ -29,3 +29,7 @@ Route::patch('updateProduct/{id}' , [ProductController::class , 'update']);
 // Route::get('/',[FrontController::class , 'index']);
 // Route::patch('selectCaregory',[FrontController::class , 'selectCaregory']);
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
